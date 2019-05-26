@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Feedback please</title>
+    </head>
+</html>
+<body>
+    <form>
+        <h1>My feedback form</h1>
+        <ul>
+            <li><label>Name:<input type="text" required /></label></li>
+            <li><label>Email: <input type="email"   required /></label></li>
+            <li><label>Password: <input type="password" minlength="8" required /></label></li>
+        </ul>  
+    <li>Please check all the emotions that apply to you</li>
+    <ul>
+        <li> <label for="angry">Angry</label>
+             <input type="checkbox" id="angry" name="emotions" value="ang"/></li>  
+        <li> <label for="sad">Sad</label>
+             <input type="checkbox" id="sad" name="emotions" value="sd"/></li>
+        <li><label for="happy">Happy</label> 
+            <input type="checkbox" id="happy" name="emotions" value="hap"/></li>
+        <li><label for="ambivalent">Ambivalent</label> 
+            <input type="checkbox" id="ambivalent"  name="emotions" value="amb"/></li>
+    </ul>
+    <li>How  satisfied were you with our service?</li>
+    <ul>
+        <li><label type="radio-1">Very satisfied</label> 
+            <input type="radio" name="satisfaction" id="radio-1"  value="vs"/> </li>
+        <li><label type="radio-2">Satisfied</label> 
+            <input type="radio" name="satisfaction" id="radio-2"  value="1"/></li>
+        <li><label type="radio-3">Didn't care</label> 
+            <input type="radio" name="satisfaction" id="radio-3"  value="2"/></li></li>
+        <li><label type="radio-4">Dissatisfied</label> 
+            <input type="radio" name="satisfaction" id="radio-4"  value="3"/></li></li>
+        <li><label type="radio-3">Very issatisfied</label> 
+            <input type="radio" name="satisfaction" id="radio-3"  value="4"/></li>
+    </ul>
+    <ul>
+            <li>Further comments: <textarea rows="4" cols="50" name="comment" form="usrform"></textarea></li>
+            <li>Bio photo: <input type="file" /></li>
+            <label>Location visited:</label>
+            <select>
+                <option>Select location</option>
+                <option>Iasi</option>
+                <option>Bucuresti</option>
+            </select>
+    </ul> <br>
+   <li><a href="bio.html">Submit</a> </li>
+    </form>
+</body>
