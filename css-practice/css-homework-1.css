@@ -1,0 +1,8 @@
+    body {font-family: Verdana, Geneva, Tahoma, sans-serif;}
+    ul li a { color: red;}
+    #style { border: 1px solid black;}
+    .color { color: green;}
+    .color2 { color: #C55;}
+    img { width: 150px;
+          height: 150px;}
+    h3 {font-family: Georgia, 'Times New Roman', Times, serif}
