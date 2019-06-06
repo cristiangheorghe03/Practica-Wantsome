@@ -2,28 +2,34 @@
 <html>
     <head>
 <style>
-    .container{ position: relative;
-                top: 0;
-                right: 0;                
-                border: 2px solid blue;
-                margin-right: 80%;
-    
-    }
-    li { color: blue;}
 
-    .section-1 { height: 10%;
-                weight: 20%;
-                position: absolute;
-                top: 0;
-                left: 20%;
-                border: 2px solid;
+.container {
+position: absolute;
+border: 2px solid cyan;
+height: 1500px;
+}
+nav {
+    position: relative;
+    left: 0;
+    width: 200px;
+    border: 1px solid blueviolet;
+    color: blueviolet;
     }
-    .section-2 {height: 10%;
-                weight: 20%;
-                position: absolute;
-                top: 10%;
-                left: 20%;
 
+section { 
+    margin-left: 200px;
+    border: 2px solid yellowgreen;
+}
+div section:nth-child(3) {background-color: rgb(192, 178, 178);}
+    footer {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 50px;
+        background-color: white;
+        border: 2px solid blue;
+        text-align: center;
     }
     </style>
     </head>
@@ -39,14 +45,16 @@
                     <li>Contact</li>
                 </ul>
             </nav>
-            <section class="section-1"> 
-                <p>The margin-left style for sections makes sure there is room for th nav.</p></section>
-            <section class="section-2">
-                <p>The section element represents a generic section of a document or application. A section, in this context, is a thematic grouping of content. Each section should be identified, typically by including a heading ( h1- h6 element) as a child of the section element.</p></section>
-            <section class="section-3">
-                <p>The p element represents a paragraph.</p></section>
-        </div>
-        <footer>
-            <p>If you use a fixed header or footer, make sure there is room for it! Put a margin-bottom on the body.</p></footer>
-    </body>
+<section>
+    The margin-left style for sections makes sure there is room for th nav.
+</section>
+<section>
+    The section element represents a generic section of a document or application. A section, in this context, is a thematic grouping of content. Each section should be identified, typically by including a heading ( h1- h6 element) as a child of the section element.
+</section>
+<section>
+    The p element represents a paragraph.
+</section>
+</div>
+<footer>If you use a fixed header or footer, make sure there is room for it! Put a margin-bottom on the body.</footer>
+</body>
 </html>
