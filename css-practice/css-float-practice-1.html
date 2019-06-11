@@ -4,19 +4,36 @@
 <style>
 
 nav {
-    position: relative;
-    left: 0;
-    width: 200px;
-    border: 1px solid blueviolet;
-    color: blueviolet;
-    }
-
-section { 
-    margin-left: 200px;
-    border: 2px solid yellowgreen;
+    float: left;
+    border: 1px solid grey;
+    width: 10%;
+    box-sizing: border-box;
+}
+section {
+    padding: 50px;
+    border: 1px solid yellowgreen;
+    float: right;
+    width: 90%;
+    box-sizing: border-box;}
+    
+.s3{
+    float: left;
 }
 
-  footer {
+.girafa {
+    width: 1000px;
+    height: 1000px;
+    background-image: url(../css-practice/girafa.jpg);
+    border: 10px dotted black;
+    padding: 5px;
+    background-clip: padding-box;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: black;opacity: 0.7;
+}
+footer {
         position: fixed;
         bottom: 0;
         left: 0;
@@ -26,11 +43,11 @@ section {
         border: 2px solid blue;
         text-align: center;
     }
-    </style>
+</style>
     </head>
     <body>
-        <div>
-            <nav class="container">
+        <div class="container">
+            <nav>
                 <ul>
                     <li>Home</li>
                     <li>Taco Menu</li>
@@ -46,9 +63,12 @@ section {
 <section>
     The section element represents a generic section of a document or application. A section, in this context, is a thematic grouping of content. Each section should be identified, typically by including a heading ( h1- h6 element) as a child of the section element.
 </section>
-<section>
+<section class="s3">
     The p element represents a paragraph.
 </section>
+
+<section class="girafa"><h2>Asta este o girafa.hfhgkjgjggk</h2></section>
+
 </div>
 <footer>If you use a fixed header or footer, make sure there is room for it! Put a margin-bottom on the body.</footer>
 </body>
