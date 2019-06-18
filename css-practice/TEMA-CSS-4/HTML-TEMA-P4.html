@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="UTF-8">
+    <style>
+
+.top-boxes, .bottom-boxes {
+    display: flex;
+    flex-flow: row wrap;
+
+}
+#burger {
+    background: url('../TEMA-CSS-4/burger.jpg') no-repeat;
+    background-size: cover;
+    height: 50vh;
+    flex: 1 40vw;
+    margin: 0 5px 0 0;
+    }
+
+#seafood {
+    background: url('../TEMA-CSS-4/seafood.jpg') no-repeat;
+    background-size: cover;
+    height: 50vh;
+    flex: 1 40vw; 
+}
+#desert {
+    background: url('../TEMA-CSS-4/desert.jpg') no-repeat;
+    background-size: cover;
+    height: 50vh;
+    flex: 1 40vw;
+    margin: 0 5px 0 0;
+}
+#beer {
+    background: url('../TEMA-CSS-4/beer.jpg') no-repeat;
+    background-size: cover;
+    height: 50vh;
+    flex: 1 40vw;
+}
+#beer p, #desert p, #seafood p, #burger p {
+    width: 90%;
+    font-size: 35px;
+    color: white;
+    background:rgba(112, 112, 112, 0.596);
+    margin: 0;
+    padding: 15px;
+}
+
+@media (max-width: 720px) {
+    .top-boxes, .bottom-boxes {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+    }
+    #burger, #seafood, #desert, #beer {
+        margin: 0;
+    }
+}
+ </style>
+    </head>
+    <body></body>
+    <div class="top-boxes">
+        <div id="burger">
+            <p>Burger</p> </div>
+        <div id="seafood">
+            <p>Seafood</p>
+        </div>
+    </div>
+    <div class="bottom-boxes">
+        <div id="desert">
+            <p>Cheescake</p>
+        </div>
+        <div id="beer">
+            <p>Beer</p>
+        </div>
+    </div>
+    </body>
+</html>

@@ -1,0 +1,39 @@
+.box1 {
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    transition: transform 1s, background-color 1s ease;
+}
+.box1:hover {
+    transform: rotate(180deg);
+    background-color: yellow;
+}
+
+.container {
+    height: 100px;
+    width: 100px;
+    transition: width 2s ease;
+}
+.box2 {
+    height: 100%;
+    width: 100%;
+    margin: 2px;
+    background-color: red;
+    transition: width 1s;
+}
+.box3 {
+    height: 100%;
+    width: 100%;
+    margin: 2px;
+    background-color: blue; 
+    transition: width 1s;
+}
+.container:hover .box2{
+    width: 300px;
+    transition: width 1s;
+} 
+.container:hover .box3 {
+    width: 300px;
+    transition: width 1s ease 1s;
+
+}

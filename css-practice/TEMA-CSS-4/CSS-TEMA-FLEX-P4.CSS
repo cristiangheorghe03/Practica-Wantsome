@@ -1,0 +1,59 @@
+.container {
+    height: 100%; 
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+}
+.box1234 {
+    display: flex;
+    flex-flow: row wrap;
+    flex: 1 70%;
+    margin: 0 1% 0 0;
+}
+.box12 {
+    display: flex;
+    flex-flow: column wrap;
+    flex-grow: 1;
+    flex-basis: 25%;
+    margin: 0 1% 1% 0;
+
+}
+.box1 {
+    background-color: grey;
+    flex:1 50%;
+}
+.box2 {
+    background-color: yellowgreen;
+    flex:1 50%;
+
+}
+.box3 {
+    background: rgb(156, 156, 206);
+    flex: 1 25%;
+    margin: 0 0 1% 0;
+}
+.box3 img {
+    width: 480px;
+    margin: 20px;
+}
+.box4 {
+    background-color: red;
+    flex: 1 70%;
+
+}
+.box5 {
+    background-color: olivedrab;
+    flex: 1 20%;
+    align-self: stretch;
+}
+.container h1, h2, p {
+    color: aqua;
+    margin: 10px 20px;
+    text-align: justify;
+}
+@media (max-width: 720px) {
+    .container {
+        flex-wrap: wrap;
+        height: 100vh;
+    }
+}
