@@ -42,7 +42,14 @@ var venit = function(remuneratie) {
 }
 console.log(venit(30001));*/
 
-var cantaret = ['Dua Lipa', 'Gabriel Cotabila','Nu Am','The Weeknd','Elena Gheorghe',]
+// var cantaret = ['Dua Lipa', 'Gabriel Cotabila','Nu Am','The Weeknd','Elena Gheorghe',]
+
+//console.log(cantaret.indexOf('Gabriel Cotabita'));
 
 
-console.log(cantaret.indexOf('Gabriel Cotabita'));
+
+const numers = [0, 1, 2, 3, 4, 5, 6, 7, 8,];
+
+const result3 = numers.filter(function(element)){
+    return element % 2 === 0;
+}
