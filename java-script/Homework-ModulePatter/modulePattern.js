@@ -51,5 +51,103 @@ function createBankAcount(name, balance) {
     withdraw,
     showAccount,
   };
+// Solutie rezolvata in clasa
+function createBankAccount(initialBalance) {
+  const OPERATIONS = {
+    deposit: "DEPOSIT",
+    withdraw: "WITHDRAW",
+  };
+
+  const transactions = [
+    {
+      amount: initialBalance,
+      operation: OPERATIONS.deposit,
+      date: new Date(),
+    },
+  ];
+
+  function getBalance() {
+    let totalBalance = 0;
+    // let totalBalanceCuFor = 0;
+
+    // for (let i = 0; i < transactions.length; i++) {
+    //   if (transactions[i].operation === "deposit") {
+    //     totalBalanceCuFor += transactions[i].amount;
+    //   } else {
+    //     totalBalanceCuFor -= transactions[i].amount;
+    //   }
+    // }
+
+    transactions.forEach(function(transaction) {
+      if (transaction.operation === OPERATIONS.deposit) {
+        totalBalance += transaction.amount;
+      } else {
+        totalBalance -= transaction.amount;
+      }
+    });
+
+    return totalBalance;
+  }
+
+  function getTransactionHistory(n = 3) {
+    return transactions
+      .concat()
+      .reverse()
+      .slice(0, n);
+  }
+
+  function makeTransaction(amount, operation) {
+    transactions.push({
+      amount,
+      operation,
+      date: new Date(),
+    });
+  }
+
+  return {
+    deposit: function() {
+      const args = Object.values(arguments);
+
+      if (args.length === 4) {
+        console.log(
+          `Esti nascut in ${args[0]}, te cheama ${args[1]}, te duci pana la ${
+            args[2]
+          } sa depui ${args[3]}lei`,
+        );
+        makeTransaction(args[3], OPERATIONS.deposit);
+      } else {
+        makeTransaction(args[0], OPERATIONS.deposit);
+      }
+    },
+    withdraw: function(amount) {
+      makeTransaction(amount, OPERATIONS.withdraw);
+    },
+    getBalance,
+    makeTransaction,
+    getTransactionHistory,
+    //
+    min: function() {
+      const args = Object.values(arguments);
+      let min = Number.MAX_SAFE_INTEGER;
+
+      args.forEach(function(arg) {
+        if (arg < min) {
+          min = arg;
+        }
+      });
+      return min;
+    },
+  };
 }
+
+const acc = createBankAccount(1000);
+
+acc.withdraw(200);
+acc.withdraw(200);
+
+acc.deposit(100);
+
+acc.deposit(2000, "Alex", "ING", 13);
+
+console.log(acc.getBalance());
 
