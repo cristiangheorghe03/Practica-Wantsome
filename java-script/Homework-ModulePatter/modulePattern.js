@@ -51,6 +51,8 @@ function createBankAcount(name, balance) {
     withdraw,
     showAccount,
   };
+
+  
 // Solutie rezolvata in clasa
 function createBankAccount(initialBalance) {
   const OPERATIONS = {

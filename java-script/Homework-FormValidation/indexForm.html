@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link href="indexForm.css" rel="stylesheet" />
+    <title>Form Validation</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <form id="myform" onsubmit="return validation()">
+        <h3>Get your own Site 42 Sites account in seconds</h3>
+        <div class="inputfield">
+          <div>
+            <label for="name">USERNAME:</label> <br />
+            <div id="errorName"></div>
+            <input id="name" name="name" type="text" />
+            <h6>(Must be at least 4 characters, letters and numbers only.)</h6>
+          </div>
+          <div>
+            <label for="email">EMAIL ADRESS:</label> <br />
+            <div id="errorEmailAdress"></div>
+            <input id="email" name="email" type="email" />
+            <h6>
+              We send you registration email to this address. (Double check your
+              email address before continuing.)
+            </h6>
+          </div>
+          <div>
+            <label for="firstName">FIRST NAME:</label> <br />
+            <div id="errorFirstName"></div>
+            <input id="firstName" name="firstName" type="text" />
+            <h6>(Must be input.)</h6>
+          </div>
+          <div>
+            <label for="lastName">LAST NAME:</label> <br />
+            <div id="errorLastName"></div>
+            <input id="lastName" name="lastName" type="text" />
+            <h6>(Must be input.)</h6>
+          </div>
+          <div>
+            <label for="nickName">NICKNAME:</label> <br />
+            <input id="nickName" name="nickName" type="text" />
+          </div>
+          <div>
+            <label for="phone">PHONE:</label> <br />
+            <div id="errorPhone"></div>
+            <input id="phone" name="phone" type="text" />
+            <h6>(Must be at least 10 characters, numbers only.)</h6>
+          </div>
+        </div>
+        <div>
+          <input id="radio-1" name="required" type="radio" value="1" />
+          <label for="radio-1">GIMME A SITE!</label>
+        </div>
+        <div>
+          <input id="radio-2" name="required" type="radio" value="2" />
+          <label for="radio-2">JUST A USERNAME, PLEASE.</label>
+        </div>
+        <button id="submitButton" type="submit">NEXT</button>
+      </form>
+    </div>
+    <script src="indexForm.js" type="text/javascript"></script>
+  </body>
+</html>
